@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask obstacleLayers;
 
 
-    int numOfJumps = 2;
     bool isGrounded;
     bool canDoubleJump = false;
 
