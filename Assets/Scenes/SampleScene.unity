@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e258d30e7cdf68489e09051628e0b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: {x: -1, y: 0}
+  moveSpeed: {x: -0.3, y: 0}
 --- !u!212 &217124177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -766,6 +766,7 @@ GameObject:
   - component: {fileID: 1470226489}
   - component: {fileID: 1470226488}
   - component: {fileID: 1470226487}
+  - component: {fileID: 1470226490}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -782,7 +783,7 @@ Transform:
   m_GameObject: {fileID: 1470226485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1923646937}
@@ -865,7 +866,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -877,6 +878,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1470226490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470226485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb8d31423ef5734cae4bcbe91715ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1923646936
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923646936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: -3.25, z: 0}
+  m_LocalPosition: {x: -4.25, y: -3.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1015,9 +1028,9 @@ GameObject:
   - component: {fileID: 2077711035}
   - component: {fileID: 2077711034}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: LowSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1036,6 +1049,8 @@ MonoBehaviour:
   obstaclePrefabs:
   - {fileID: 2922696967513687791, guid: 8427c93c57205424ca9d84d9653a781a, type: 3}
   - {fileID: 9041361954855967154, guid: 3b6ac1d3c4e8fb347885767f11cb29c2, type: 3}
+  - {fileID: 3770925822613255805, guid: 1ae7671b763032f4ea01e51d29f30c9c, type: 3}
+  intervalTime: 2
 --- !u!4 &2077711035
 Transform:
   m_ObjectHideFlags: 0
@@ -1044,7 +1059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077711033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: -4, z: 0}
+  m_LocalPosition: {x: 12, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

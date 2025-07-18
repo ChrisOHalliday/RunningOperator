@@ -29,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
     {
 
         GroundedCheck();
-        Damage();
     }
 
     void OnJump(InputValue value)
@@ -61,15 +60,6 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = false;
         }
-    }
-
-    void Damage()
-    {
-        if (playerCollider2D.IsTouchingLayers(obstacleLayers))
-        {
-            Debug.Log("Ouchie");
-        }
-
     }
 
 }

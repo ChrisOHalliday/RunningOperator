@@ -1,18 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int playerHealth = 3;
+    private bool isAlive = true;
+
+    private void Update()
     {
-        
+        if (playerHealth <= 0 && isAlive)
+        {            
+            isAlive = false;
+        }
+
+        if (!isAlive)
+        {
+
+            Debug.Log("Dead");
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.tag == "Obstacle" && isAlive)
+        {
+            playerHealth--;
+            Debug.Log(playerHealth);
+        }
     }
+
 }

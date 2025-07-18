@@ -7,8 +7,9 @@ public class Spawner : MonoBehaviour
 
     [SerializeField]
     private GameObject[] obstaclePrefabs = new GameObject[0];
-
+    [SerializeField]
     private float intervalTime = 5.0f;
+
     private float timer = 0.0f;
 
     private void Update()
