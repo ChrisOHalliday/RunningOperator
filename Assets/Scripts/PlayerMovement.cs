@@ -28,8 +28,10 @@ public class PlayerMovement : MonoBehaviour
         playerCollider2D = GetComponentInChildren<Collider2D>();
         playerRb2D = GetComponentInChildren<Rigidbody2D>();
 
+        //player input actions
         playerInputActions = new PlayerInput();
         playerInputActions.Player.Enable();
+        //subscribe functions to performed event within playerInput
         playerInputActions.Player.Jump.performed += OnJump;
         playerInputActions.Player.Fall.performed += OnFastFall;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class ObstacleSpawner : MonoBehaviour
 {
 
     [SerializeField]
@@ -15,10 +15,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-
         SpawnLoop();
-
-
     }
 
     private void SpawnLoop()

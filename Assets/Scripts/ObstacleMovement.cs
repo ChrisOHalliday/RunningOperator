@@ -8,8 +8,8 @@ public class ObstacleMovement : MonoBehaviour
     private Rigidbody2D rb2D;
 
     [SerializeField]
-    private float speed  = 5;
-    private Vector3 movementVector;
+    private float speed  = 5.0f;
+    private Vector2 movementVector;
 
     private void Awake()
     {
@@ -18,7 +18,7 @@ public class ObstacleMovement : MonoBehaviour
 
     private void Start()
     {
-        movementVector = Vector3.left * speed;
+        movementVector = Vector2.left * speed;
     }
 
 
