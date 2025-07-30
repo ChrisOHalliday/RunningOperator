@@ -26,13 +26,12 @@ public class CollectableSpawner : MonoBehaviour
         }
         
         
-
     }
 
     private int GenerateRandomNumber()
     {
         int randomValue = Random.Range(0, 100);
-        Debug.Log(randomValue);
+        //Debug.Log(randomValue);
         return randomValue;
     }
 

@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -793919241, guid: 6898034f66966974f85e786e29ef93cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3757559698200572842}
   - component: {fileID: 8606870108577647597}
   - component: {fileID: 2398796719561295752}
+  - component: {fileID: 1783714323663603716}
   - component: {fileID: 5742054715813640172}
   m_Layer: 11
   m_Name: CollectableOrange
@@ -170,6 +171,19 @@ PolygonCollider2D:
       - {x: -0.00015380234, y: -0.25187957}
       - {x: -0.00012260675, y: -0.2516664}
       - {x: 0.24639285, y: -0.00025194883}
+--- !u!114 &1783714323663603716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190898036511098422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fd82a76a5f2cc4383424edb5be1753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
 --- !u!114 &5742054715813640172
 MonoBehaviour:
   m_ObjectHideFlags: 0

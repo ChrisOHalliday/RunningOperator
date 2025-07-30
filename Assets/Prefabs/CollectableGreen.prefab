@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -963166789, guid: 6898034f66966974f85e786e29ef93cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 8437851736695245049}
   - component: {fileID: 2545054716345724948}
   - component: {fileID: 159244489476105595}
+  - component: {fileID: 2854287564074333280}
   - component: {fileID: 6240586279216457343}
   m_Layer: 11
   m_Name: CollectableGreen
@@ -170,6 +171,19 @@ PolygonCollider2D:
       - {x: -0.00015380234, y: -0.25187957}
       - {x: -0.00012260675, y: -0.2516664}
       - {x: 0.24639285, y: -0.00025194883}
+--- !u!114 &2854287564074333280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6544307981774127651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fd82a76a5f2cc4383424edb5be1753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
 --- !u!114 &6240586279216457343
 MonoBehaviour:
   m_ObjectHideFlags: 0
